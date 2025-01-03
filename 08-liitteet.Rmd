@@ -1,0 +1,31 @@
+# Liite A - Karttapolut {-}
+
+Liite sisältää tutkielman tulososioon liittyvät karttapolut. Kukin kartta käsittää $r=30$ ajoa kullakin suunnitteluparametrikombinaatiolla. Karttojen otsikossa on mainittu ainoastaan testatut suunnitteluparametrit, vakioarvoiset parametrit on esitetty luvussa \ref{tulokset}.
+
+## Vaihe 1 {-}
+
+```{r}
+# \section{Vaihe 1} \label{liite-a-vaihe-1}
+phase1_maps <- read_rds("analyysi/data/tulokset_vaihe1_kartat.RDS")
+for(i in 1:length(phase1_maps)) {
+  print(phase1_maps[[i]])
+}
+```
+
+## Vaihe 2 {-}
+
+```{r}
+phase2_maps <- read_rds("analyysi/data/tulokset_vaihe2_kartat.RDS")
+for(i in 1:length(phase2_maps)) {
+  print(phase2_maps[[i]])
+}
+```
+
+## Vaihe 3 {-}
+
+```{r}
+phase3_maps <- read_rds("analyysi/data/tulokset_vaihe3_kartat.RDS")
+for(i in 1:length(phase3_maps)) {
+  print(phase3_maps[[i]])
+}
+```
